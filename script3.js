@@ -1,3 +1,11 @@
-const signal = prompt("what is traffic signal color ?")
+const signal = prompt("What Traffic Signal Color Is ?").toLowerCase();
 
-if (signal === "")
+if (signal === "red"){
+    document.write("MUST STOP")
+}else if (signal === "yellow"){
+    document.write("READY TO MOVE")
+}else if (signal === "green"){
+    document.write("MOVE NOW")
+}else{
+    document.write("Please select any color")
+}
